@@ -65,6 +65,7 @@ function App() {
 
     }
     setPostText("");
+    setUpdateId(null);
 
     try {
       const editPost = await axios.put(`https://68b54396e5dc090291ae67f3.mockapi.io/posts/${updateId}`, updatePost)
